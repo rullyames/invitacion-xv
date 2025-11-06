@@ -1,0 +1,679 @@
+---
+
+---
+
+<div
+  id="invitation-content"
+  class="min-h-screen bg-[#faf3dd] opacity-0 transition-opacity duration-1000"
+  style="display: none;"
+>
+  <!-- Decorative Initials Section -->
+<section
+  class="relative bg-[#faf3dd] py-16 md:py-24 px-4 overflow-hidden min-h-screen flex items-center"
+>
+  <div class="max-w-xl mx-auto w-full h-full flex items-center">
+    <div class="relative w-full h-screen">
+      <!-- Marco decorativo SVG más largo -->
+      <svg
+        viewBox="0 0 400 900"
+        class="absolute inset-0 w-full h-full"
+        preserveAspectRatio="xMidYMid meet"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Borde exterior -->
+        <rect
+          x="15"
+          y="15"
+          width="370"
+          height="870"
+          stroke="#a3b5a3"
+          stroke-width="2"
+          fill="none"></rect>
+        <rect
+          x="20"
+          y="20"
+          width="360"
+          height="860"
+          stroke="#a3b5a3"
+          stroke-width="1"
+          fill="none"></rect>
+
+        <!-- Ornamento esquina superior izquierda -->
+        <g
+          stroke="#a3b5a3"
+          stroke-width="1.2"
+          fill="none"
+          stroke-linecap="round"
+        >
+          <rect x="32" y="32" width="10" height="10"></rect>
+          <circle cx="50" cy="40" r="2.5"></circle>
+          <circle cx="40" cy="50" r="2.5"></circle>
+          <circle cx="32" cy="58" r="2"></circle>
+          <circle cx="58" cy="32" r="2"></circle>
+          <path d="M 42 32 Q 48 35, 52 40"></path>
+          <path d="M 32 42 Q 35 48, 40 52"></path>
+          <path d="M 45 45 Q 50 42, 55 38"></path>
+          <path d="M 45 45 Q 42 50, 38 55"></path>
+          <path d="M 30 62 Q 32 58, 35 55 Q 40 50, 45 48"></path>
+          <path d="M 62 30 Q 58 32, 55 35 Q 50 40, 48 45"></path>
+        </g>
+
+        <!-- Ornamento esquina superior derecha (espejo horizontal) -->
+        <g
+          stroke="#a3b5a3"
+          stroke-width="1.2"
+          fill="none"
+          stroke-linecap="round"
+        >
+          <rect x="358" y="32" width="10" height="10"></rect>
+          <circle cx="350" cy="40" r="2.5"></circle>
+          <circle cx="360" cy="50" r="2.5"></circle>
+          <circle cx="368" cy="58" r="2"></circle>
+          <circle cx="342" cy="32" r="2"></circle>
+          <path d="M 358 32 Q 352 35, 348 40"></path>
+          <path d="M 368 42 Q 365 48, 360 52"></path>
+          <path d="M 355 45 Q 350 42, 345 38"></path>
+          <path d="M 355 45 Q 358 50, 362 55"></path>
+          <path d="M 370 62 Q 368 58, 365 55 Q 360 50, 355 48"></path>
+          <path d="M 338 30 Q 342 32, 345 35 Q 350 40, 352 45"></path>
+        </g>
+
+        <!-- Ornamento esquina inferior izquierda (espejo vertical) -->
+        <g
+          stroke="#a3b5a3"
+          stroke-width="1.2"
+          fill="none"
+          stroke-linecap="round"
+        >
+          <rect x="32" y="858" width="10" height="10"></rect>
+          <circle cx="50" cy="860" r="2.5"></circle>
+          <circle cx="40" cy="850" r="2.5"></circle>
+          <circle cx="32" cy="842" r="2"></circle>
+          <circle cx="58" cy="868" r="2"></circle>
+          <path d="M 42 868 Q 48 865, 52 860"></path>
+          <path d="M 32 858 Q 35 852, 40 848"></path>
+          <path d="M 45 855 Q 50 858, 55 862"></path>
+          <path d="M 45 855 Q 42 850, 38 845"></path>
+          <path d="M 30 838 Q 32 842, 35 845 Q 40 850, 45 852"></path>
+          <path d="M 62 870 Q 58 868, 55 865 Q 50 860, 48 855"></path>
+        </g>
+
+        <!-- Ornamento esquina inferior derecha (espejo diagonal) -->
+        <g
+          stroke="#a3b5a3"
+          stroke-width="1.2"
+          fill="none"
+          stroke-linecap="round"
+        >
+          <rect x="358" y="858" width="10" height="10"></rect>
+          <circle cx="350" cy="860" r="2.5"></circle>
+          <circle cx="360" cy="850" r="2.5"></circle>
+          <circle cx="368" cy="842" r="2"></circle>
+          <circle cx="342" cy="868" r="2"></circle>
+          <path d="M 358 868 Q 352 865, 348 860"></path>
+          <path d="M 368 858 Q 365 852, 360 848"></path>
+          <path d="M 355 855 Q 350 858, 345 862"></path>
+          <path d="M 355 855 Q 358 850, 362 845"></path>
+          <path d="M 370 838 Q 368 842, 365 845 Q 360 850, 355 852"></path>
+          <path d="M 338 870 Q 342 868, 345 865 Q 350 860, 352 855"></path>
+        </g>
+      </svg>
+
+      <!-- Contenido: Iniciales AK con flor -->
+      <div class="absolute inset-0 flex items-center justify-center p-16">
+        <img
+          src="/AK.png"
+          alt="Iniciales Airam Kamila"
+          class="w-[80%] h-auto object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Hero Section with initials -->
+  <section class="relative bg-sage-500 text-white overflow-hidden">
+    <!-- Flores decorativas superiores (invertidas) -->
+    <div class="w-full">
+      <img
+        src="/flower-deco-3.png"
+        alt="Decoración floral superior"
+        class="w-full h-auto transform scale-y-[-1]"
+      />
+    </div>
+
+    <div class="py-12 px-4">
+      <div class="max-w-2xl mx-auto text-center relative z-10">
+        <p
+          class="font-elegant text-base md:text-lg italic leading-relaxed max-w-xl mx-auto mb-8 text-[#faf3dd]"
+        >
+          "Hay momentos inolvidables que se atesoran en el corazón para siempre,
+          por esta razón quiero que compartas conmigo éste día tan especial."
+        </p>
+
+        <img src="/crown.png" alt="corona" class="w-24 md:w-32 mx-auto mb-4" />
+
+        <h2
+          class="font-playfair text-3xl md:text-4xl tracking-[0.2em] mb-8 text-[#faf3dd]"
+        >
+          MIS XV AÑOS
+        </h2>
+
+        <p class="font-script text-5xl md:text-6xl mt-8 mb-10 text-[#faf3dd]">
+          Airam Kamila
+        </p>
+
+        <p
+          class="font-elegant text-sm md:text-base max-w-lg mx-auto mb-12 text-[#faf3dd]"
+        >
+          Con la bendición de Dios y el amor de mis padres, te invito a celebrar
+          con alegría este momento tan especial.
+        </p>
+
+        <div class="font-playfair text-2xl md:text-2xl mb-12 text-[#faf3dd]">
+          MIS 15 AÑOS
+        </div>
+
+        <!-- Date Section -->
+        <div class="py-8">
+          <!-- ENERO -->
+          <div class="text-center mb-6">
+            <h2
+              class="font-playfair text-2xl md:text-3xl text-[#faf3dd] tracking-[0.3em]"
+            >
+              ENERO
+            </h2>
+          </div>
+
+          <!-- Grid de 3 columnas: VIERNES - 9 - 2026 -->
+          <div
+            class="grid grid-cols-3 gap-4 md:gap-8 items-center max-w-2xl mx-auto mb-12"
+          >
+            <!-- VIERNES -->
+            <div class="text-center">
+              <div class="border-t border-b border-[#faf3dd]/60 py-2 md:py-3">
+                <h3
+                  class="font-playfair text-lg md:text-2xl text-[#faf3dd] tracking-[0.15em]"
+                >
+                  VIERNES
+                </h3>
+              </div>
+            </div>
+
+            <!-- 9 (número grande con estilo script) -->
+            <div class="text-center">
+              <div
+                class="font-script text-8xl md:text-8xl text-[#faf3dd] leading-none"
+              >
+                9
+              </div>
+            </div>
+
+            <!-- 2026 -->
+            <div class="text-center">
+              <div class="border-t border-b border-[#faf3dd]/60 py-2 md:py-3">
+                <h3
+                  class="font-playfair text-lg md:text-2xl text-[#faf3dd] tracking-[0.15em]"
+                >
+                  2026
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="mb-8">
+          <div class="font-elegant text-sm text-[#faf3dd]">FALTAN</div>
+          <div
+            id="countdown"
+            class="font-playfair text-3xl md:text-4xl lg:text-5xl text-[#faf3dd] mt-4 tabular-nums"
+          >
+            00:00:00:00
+          </div>
+          <div
+            class="flex justify-center gap-4 md:gap-8 mt-2 font-elegant text-xs text-[#faf3dd]"
+          >
+            <span>DÍAS</span>
+            <span>HORAS</span>
+            <span>MIN</span>
+            <span>SEG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flores decorativas inferiores (normales) -->
+    <div class="w-full">
+      <img
+        src="/flower-deco-3.png"
+        alt="Decoración floral inferior"
+        class="w-full h-auto"
+      />
+    </div>
+  </section>
+
+  <!-- Church and Reception Section -->
+  <section class="py-16 px-4 bg-[#faf3dd]">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Church -->
+        <div class="text-center">
+          <div class="w-32 h-32 mx-auto mb-6">
+            <img
+              src="/Church-2.png"
+              alt="Iglesia"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <h3 class="font-playfair text-2xl mb-3 text-[#adc0a0] tracking-wide">
+            MISA
+          </h3>
+          <p class="font-elegant text-base text-[#adc0a0] mb-2">
+            Iglesia San Carlos Borromeo
+          </p>
+          <p class="font-elegant text-sm text-[#adc0a0] mb-4">
+            C. Republica de Panama, Alvaro Obregon
+          </p>
+          <a
+            class="inline-block px-6 py-2 bg-[#adc0a0] text-white rounded-full text-sm font-elegant hover:bg-sage-600 transition-colors"
+            href="https://maps.app.goo.gl/DL6FvSRLdohqY1iZA"
+            target="_blank"
+          >
+            Ver ubicación
+          </a>
+        </div>
+
+        <!-- Reception -->
+        <div class="text-center">
+          <div class="w-32 h-32 mx-auto mb-6">
+            <img
+              src="/cups-2.png"
+              alt="Recepción"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <h3 class="font-playfair text-2xl mb-3 text-[#adc0a0] tracking-wide">
+            RECEPCIÓN
+          </h3>
+          <p class="font-elegant text-base text-[#adc0a0] mb-2">
+            Eventos Las Perlas
+          </p>
+          <p class="font-elegant text-sm text-[#adc0a0] mb-4">
+            Km 10.5 carr. 26 Rumbo Real del 14
+          </p>
+          <a
+            class="inline-block px-6 py-2 bg-[#adc0a0] text-white rounded-full text-sm font-elegant hover:bg-sage-600 transition-colors"
+            href="https://maps.app.goo.gl/vizN1MBVDacv7p4r8"
+            target="_blank"
+          >
+            Ver ubicación
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Itinerary -->
+  <section class="py-16 px-4 bg-[#faf3dd]">
+    <div class="max-w-4xl mx-auto">
+      <div class="relative">
+        <!-- Decoración floral (posición absoluta, esquina superior izquierda) -->
+        <div class="absolute left-0 top-0 w-48 md:w-64 z-10 -mt-4 -ml-4">
+          <img
+            src="/flower-deco-2.png"
+            alt="Decoración floral"
+            class="w-full h-auto"
+          />
+        </div>
+
+        <!-- Contenedor del itinerario -->
+        <div class="w-full max-w-md mx-auto md:ml-auto md:mr-0">
+          <div
+            class="bg-[#adc0a0] pt-16 pb-12 px-8 md:px-12 relative"
+            style="border-radius: 200px 200px 0 0;"
+          >
+            <h3
+              class="font-script text-6xl md:text-5xl text-[#faf3dd] mb-1 text-center"
+            >
+              Itinerario
+            </h3>
+            <p
+              class="font-elegant text-[#faf3dd] text-2xl italic text-center mb-12"
+            >
+              de actividades
+            </p>
+
+            <div class="space-y-6">
+              <div
+                class="flex items-baseline gap-8 pb-5 border-b border-white/40"
+              >
+                <span
+                  class="font-playfair text-lg text-[#faf3dd] font-normal whitespace-nowrap"
+                >
+                  6:00 PM
+                </span>
+                <span class="font-elegant text-xl text-[#faf3dd]"> Misa </span>
+              </div>
+
+              <div
+                class="flex items-baseline gap-8 pb-5 border-b border-white/40"
+              >
+                <span
+                  class="font-playfair text-lg text-[#faf3dd] font-normal whitespace-nowrap"
+                >
+                  9:00 PM
+                </span>
+                <span class="font-elegant text-xl text-[#faf3dd]">
+                  Recepción
+                </span>
+              </div>
+
+              <div
+                class="flex items-baseline gap-8 pb-5 border-b border-white/40"
+              >
+                <span
+                  class="font-playfair text-lg text-[#faf3dd] font-normal whitespace-nowrap"
+                >
+                  10:00 PM
+                </span>
+                <span class="font-elegant text-xl text-[#faf3dd]"> Cena </span>
+              </div>
+
+              <div
+                class="flex items-baseline gap-8 pb-5 border-b border-white/40"
+              >
+                <span
+                  class="font-playfair text-lg text-[#faf3dd] font-normal whitespace-nowrap"
+                >
+                  10:30 PM
+                </span>
+                <span class="font-elegant text-xl text-[#faf3dd]"> Vals </span>
+              </div>
+
+              <div class="flex items-baseline gap-8 pb-5">
+                <span
+                  class="font-playfair text-lg text-[#faf3dd] font-normal whitespace-nowrap"
+                >
+                  2:00 AM
+                </span>
+                <span class="font-elegant text-xl text-[#faf3dd]">
+                  Despedida
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Dress Code & Gifts Combined Section -->
+  <section class="py-16 px-4 bg-[#faf3dd]">
+    <div class="max-w-4xl mx-auto">
+      <!-- Contenedor verde con decoraciones florales -->
+      <div class="bg-[#adc0a0] rounded-3xl relative py-16 px-8">
+        <!-- Decoración floral superior izquierda -->
+        <div class="absolute -top-8 w-48 md:w-72 lg:w-96 -left-4">
+          <img
+            src="/flower-deco-1.png"
+            alt="Decoración floral"
+            class="w-full h-auto"
+          />
+        </div>
+
+        <!-- Decoración floral inferior derecha (rotada) -->
+        <div
+          class="absolute -bottom-8 w-48 md:w-72 lg:w-96 rotate-180 -right-4 z-20"
+        >
+          <img
+            src="/flower-deco-1.png"
+            alt="Decoración floral"
+            class="w-full h-auto"
+          />
+        </div>
+
+        <!-- Contenido -->
+        <div class="max-w-2xl mx-auto text-center relative z-10">
+          <!-- Código de Vestimenta -->
+          <h3
+            class="font-playfair text-2xl md:text-3xl mb-6 text-[#faf3dd] tracking-[0.2em]"
+          >
+            CÓDIGO DE VESTIMENTA
+          </h3>
+
+          <p
+            class="font-playfair text-xl md:text-2xl text-[#faf3dd] tracking-widest mb-10"
+          >
+            FORMAL
+          </p>
+
+          <div class="flex justify-center mb-12">
+            <img
+              src="/dress-code.png"
+              alt="Código de vestimenta formal"
+              class="w-full max-w-sm h-auto object-contain"
+            />
+          </div>
+
+          <!-- Divisor decorativo -->
+          <div class="flex justify-center mb-12">
+            <img
+              src="/divisor.png"
+              alt="Divisor decorativo"
+              class="w-full max-w-md h-auto object-contain"
+            />
+          </div>
+
+          <!-- Sugerencia de Regalos -->
+          <h3
+            class="font-playfair text-2xl md:text-3xl mb-6 text-[#faf3dd] tracking-[0.2em]"
+          >
+            SUGERENCIA DE REGALOS
+          </h3>
+
+          <p
+            class="font-elegant text-sm md:text-base text-[#faf3dd] mb-8 leading-relaxed max-w-lg mx-auto italic"
+          >
+            Tu compañía en este día tan especial es el mejor regalo. Pero, si
+            deseas darme un obsequio, aquí tienes algunas opciones:
+          </p>
+
+          <!-- Iconos de regalo y sobre -->
+          <div class="flex items-center justify-center gap-8 mb-10">
+            <div class="w-20 h-20 md:w-16 md:h-16">
+              <img src="/regalo.png" alt="Regalo" />
+            </div>
+
+            <div class="w-20 h-20 md:w-16 md:h-16">
+              <svg viewBox="0 0 100 100" class="w-full h-full text-[#faf3dd]">
+                <rect
+                  x="15"
+                  y="35"
+                  width="70"
+                  height="45"
+                  rx="3"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"></rect>
+                <path
+                  d="M 15 35 L 50 60 L 85 35"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"></path>
+                <line
+                  x1="15"
+                  y1="80"
+                  x2="45"
+                  y2="55"
+                  stroke="currentColor"
+                  stroke-width="2"></line>
+                <line
+                  x1="85"
+                  y1="80"
+                  x2="55"
+                  y2="55"
+                  stroke="currentColor"
+                  stroke-width="2"></line>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Wish List -->
+          <h4
+            class="font-playfair text-xl md:text-2xl mb-6 text-[#faf3dd] tracking-[0.15em]"
+          >
+            WISH LIST
+          </h4>
+
+          <a
+            class="px-8 py-2.5 bg-[#faf3dd] text-[#6b856b] rounded-full font-elegant text-sm hover:bg-white transition-colors"
+            href="https://www.amazon.com.mx/hz/wishlist/ls/77Q8JGW8122N?ref_=wl_share"
+            target="_blank"
+          >
+            Lista de regalos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="py-16 px-4 bg-[#faf3dd]">
+    <div class="max-w-xl mx-auto text-center">
+      <div class="mb-8">
+        <svg
+          class="w-16 h-16 mx-auto text-[#adc0a0] mb-4"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640"
+          fill="currentColor"
+        >
+          <path
+            d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"
+          ></path>
+        </svg>
+      </div>
+
+      <h3 class="font-playfair text-3xl mb-10 text-[#adc0a0] tracking-wide">
+        CONFIRMAR ASISTENCIA
+      </h3>
+      
+
+      <div class="flex flex-col gap-4 items-center">
+        <a
+          class="px-10 py-3 bg-sage-500 text-white rounded-full font-elegant hover:bg-sage-600 transition-colors inline-flex items-center justify-center gap-2 w-full max-w-xs"
+          href="https://wa.me/526624737694?text=Hola%21%20Confirmo%20mi%20asistencia%20para%20los%20XV%20de%20Airam%20Kamila%20%F0%9F%92%9A"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Confirma aquí
+        </a>
+        
+        <a
+          href="https://calendar.app.google/xPaReN3WzZBdC4by9"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-10 py-3 bg-sage-500 text-white rounded-full font-elegant hover:bg-sage-600 transition-colors inline-flex items-center justify-center gap-2 w-full max-w-xs"
+        >
+          Save the Date - Misa
+        </a>
+        
+        <a
+          href="https://calendar.app.google/ybYFrazDn2BvPKBi8"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-10 py-3 bg-sage-500 text-white rounded-full font-elegant hover:bg-sage-600 transition-colors inline-flex items-center justify-center gap-2 w-full max-w-xs"
+        >
+          Save the Date - Fiesta
+        </a>
+      </div>
+
+      <div class="flex justify-center">
+        <img
+          src="/divisor-2.png"
+          alt="Divisor decorativo"
+          class="w-3/4 max-w-md h-auto object-contain mt-5"
+        />
+      </div>
+
+      <div class="pt-4">
+        <p class="font-elegant text-lg italic text-[#adc0a0] leading-relaxed">
+          "Hoy dejo atrás la niñez y abro las alas hacia nuevos sueños. Gracias
+          por acompañarme en este viaje donde cada momento se convierte en un
+          recuerdo eterno."
+        </p>
+        <p class="font-elegant text-base text-[#adc0a0] mb-8 mt-8">
+          Esperamos contar con su presencia
+        </p>
+      </div>
+
+      <div class="mt-12">
+        <p class="font-script text-4xl text-[#adc0a0] tracking-wide">
+          ¡Muchas Gracias!
+        </p>
+      </div>
+
+      <script>
+        function updateCountdown() {
+          // Fecha del evento: Viernes 9 de Enero 2026, 7:00 PM (Hermosillo, MST - sin horario de verano)
+          const eventDate = new Date("2026-01-09T18:00:00-07:00");
+
+          // Obtener la fecha actual
+          const now = new Date();
+
+          // Calcular la diferencia en milisegundos
+          const difference = eventDate.getTime() - now.getTime();
+
+          if (difference > 0) {
+            // Calcular días, horas, minutos y segundos
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(
+              (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+            );
+            const minutes = Math.floor(
+              (difference % (1000 * 60 * 60)) / (1000 * 60),
+            );
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            // Formatear con ceros a la izquierda
+            const formatNumber = (num: number) =>
+              num.toString().padStart(2, "0");
+
+            // Actualizar el elemento
+            const countdownElement = document.getElementById("countdown");
+            if (countdownElement) {
+              countdownElement.textContent = `${formatNumber(days)}:${formatNumber(hours)}:${formatNumber(minutes)}:${formatNumber(seconds)}`;
+            }
+          } else {
+            // El evento ya pasó
+            const countdownElement = document.getElementById("countdown");
+            if (countdownElement) {
+              countdownElement.textContent = "¡Es hoy!";
+            }
+          }
+        }
+
+        // Actualizar inmediatamente
+        updateCountdown();
+
+        // Actualizar cada segundo
+        setInterval(updateCountdown, 1000);
+      </script>
+
+      <style>
+        @keyframes float {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+      </style>
+    </div>
+  </section>
+</div>

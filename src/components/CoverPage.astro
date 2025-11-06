@@ -1,0 +1,117 @@
+---
+---
+
+<div
+  id="cover-page"
+  class="cover-page min-h-screen bg-sage-500 flex items-center justify-center p-4 relative overflow-hidden transition-opacity duration-1000"
+>
+  <!-- Main card -->
+  <div class="relative z-10 max-w-md w-full">
+    <div class="bg-cream-200 shadow-2xl shadow-black overflow-visible min-h-screen flex flex-col relative">
+      
+      <!-- Text content -->
+      <div class="flex-1 flex flex-col justify-center px-8 py-20 text-center space-y-12 relative z-10">
+        <div class="space-y-2">
+          <p class="font-elegant italic text-lg md:text-xl text-gray-700">
+            Has recibido una
+          </p>
+          <p class="font-elegant italic text-lg md:text-xl text-gray-700">
+            invitación a un
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="font-playfair text-3xl md:text-4xl tracking-[0.3em] text-gray-800 font-light">
+            EVENTO
+          </h1>
+          <h1 class="font-playfair text-3xl md:text-4xl tracking-[0.3em] text-gray-800 font-light">
+            ESPECIAL
+          </h1>
+        </div>
+
+        <!-- Envelope -->
+        <button
+          id="openEnvelope"
+          class="mx-auto block relative group cursor-pointer transition-all duration-500 hover:scale-105"
+          aria-label="Abrir invitación"
+        >
+          <div class="relative w-full max-w-sm mx-auto">
+            <img
+              src="/Sobre.png"
+              alt="Sobre de invitación"
+              class="w-full h-auto drop-shadow-2xl rounded-lg group-hover:drop-shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] transition-all duration-300"
+            />
+          </div>
+        </button>
+      </div>
+
+      <!-- Decoración floral inferior -->
+      <div class="absolute bottom-0 left-0 right-0 z-30 pointer-events-none">
+        <img 
+          src="/flower-deco-3.png" 
+          alt="Decoración floral inferior" 
+          class="w-full h-auto"
+        />
+      </div>
+
+      <!-- Decoración floral superior (al frente de todo) -->
+      <div class="absolute -top-8 -left-5 -right-5 z-40 pointer-events-none">
+        <div class="flex justify-between -mx-2">
+          <!-- Esquina superior izquierda -->
+          <div class="w-40 md:w-48">
+            <img 
+              src="/marco-cover.png" 
+              alt="Decoración floral" 
+              class="w-full h-auto"
+            />
+          </div>
+          <!-- Esquina superior derecha -->
+          <div class="w-40 md:w-48 transform scale-x-[-1]">
+            <img 
+              src="/marco-cover.png" 
+              alt="Decoración floral" 
+              class="w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Audio element (oculto) -->
+<audio id="backgroundMusic" loop>
+  <source src="/music.mp3" type="audio/mpeg">
+  Tu navegador no soporta el elemento de audio.
+</audio>
+
+<script>
+  document.getElementById("openEnvelope")?.addEventListener("click", () => {
+    const coverPage = document.getElementById("cover-page");
+    const invitationContent = document.getElementById("invitation-content");
+    const audio = document.getElementById("backgroundMusic") as HTMLAudioElement;
+
+    if (coverPage && invitationContent) {
+      // Reproducir música
+      if (audio) {
+        audio.play().catch(error => {
+          console.log("No se pudo reproducir el audio automáticamente:", error);
+        });
+      }
+
+      // Ocultar el cover con fade out
+      coverPage.style.opacity = "0";
+
+      // Después de la animación, ocultar cover y mostrar contenido
+      setTimeout(() => {
+        coverPage.style.display = "none";
+        invitationContent.style.display = "block";
+
+        // Fade in del contenido
+        setTimeout(() => {
+          invitationContent.style.opacity = "1";
+        }, 50);
+      }, 1000);
+    }
+  });
+</script>
